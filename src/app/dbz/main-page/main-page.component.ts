@@ -1,14 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-
-interface Personaje {
-  nombre: string;
-  poder: number;
-}
+import { Component } from '@angular/core';
+import {Personaje} from '../interfaces/dbz.interface';
 
 @Component({
   selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
 
@@ -23,21 +18,6 @@ export class MainPageComponent {
     }
   ];
 
-  nuevo: Personaje = {
-    nombre: '',
-    poder: 0
-  };
-
-  agregar(){
-    this.personaje.push(this.nuevo);
-    this.nuevo = {
-      nombre: '',
-      poder: 0
-    };
-  }
-
-  cambiarNombre(event: any){
-
-  }
+  nuevo: Personaje[] = [];
 
 }
