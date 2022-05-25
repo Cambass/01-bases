@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { HeroesModule } from './heroes/heroes.module';
-import { ContadorModule } from './Contador/contador.module';
-import { DbzModule } from './dbz/dbz.module';
+import {AppComponent} from './app.component';
+import {HeroesModule} from './heroes/heroes.module';
+import {ContadorModule} from './Contador/contador.module';
+import {DbzModule} from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
